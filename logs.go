@@ -79,6 +79,8 @@ func LogCustomFile(str interface{}, logFile string, isRecord bool) {
 	if loggers.readMap(logFile) == nil {
 		initLogger(logFile)
 	}
+
+	
 	if isRecord {
 		checkAndUpdateLogFile(logFile)
 	}
